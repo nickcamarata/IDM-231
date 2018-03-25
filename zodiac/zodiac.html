@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nick's Zodiac</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="zodiac.css">
+        <style>
+            @font-face{
+                font-family: 'IndieFlower';
+                src: url('IndieFlower.ttf');}
+            @font-face{
+            font-family: 'Roboto-Meduim';
+            src: url('Roboto-Medium.ttf');}
+        </style>
+    </head>
+    <body>
+        <div class="conent">
+        <h1>Who is my soulmate?</h1>
+        <h2>Enter your birthdate to find a match:</h2>
+
+        <form name="info">
+                <h2>Month
+                <input type="number" id="month" name="month" min="1" max="12"></h2>
+                <h2>Day
+                <input type="number" id="day"  name="day" min="1" max="31"></h2>
+                <h2>Year
+                <input type="number" size="6" name="year"></h2><br>
+
+                <input type="button" value="Search the Cosmos" onClick=signs() ></div>
+                <!-- <input type="button" value="Try a new Date" onClick=location.reload(false)></div> -->
+                </form>
+
+                <h2 id="result" style="color: white;">     
+                    Your Soulmate...<br>
+                </h2> 
+
+    
+            <center>
+            <div class="astrosigns">
+                    <img src="assets/capricorn.png" onClick="capricorn()">
+                    <img src="assets/sagittarius.png" onClick="sagittarius()">
+                    <img src="assets/scorpio.png" onClick="scorpio()">
+                    <img src="assets/libra.png" onClick="libra()">
+                    <img src="assets/virgo.png" onClick="virgo()">
+                    <img src="assets/leo.png" onClick="leo()">
+                    <img src="assets/cancer.png" onClick="cancer()">
+                    <img src="assets/gemini.png" onClick="gemini()">
+                    <img src="assets/taurus.png" onClick="taurus()">
+                    <img src="assets/aries.png" onClick="aries()">
+                    <img src="assets/pisces.png" onClick="pisces()">
+                    <img src="assets/aquarius.png" onClick="aquarius()">
+                </center>
+
+
+                <div id="instructions">
+                    <h3>Enter a valid birthdate into the form above. Enter the month in to the first box,
+                        the day into the second box, and the year in the third. The month and day will
+                        go through a zodiac algorithm to determine what random person is your "soulmate." 
+                        Alternatively, you can click any sign you want to reveal the mystery match for that
+                        symbol.
+                    </h3>
+                </div>
+          
+               
+    </body>
+    <script src="zodiac.js"></script>
+</html>
